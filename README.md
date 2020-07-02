@@ -30,3 +30,9 @@ Also I can model basic platforms and obstacles in Maya or Blender to not use the
 
 
 I am happy with the result of the exercise because the level is complete with the different states of the game. You can complete the level, lose, and restart the game.
+
+- HowTo:
+
+
+You can test it with your mouse in the Unity Editor or using the Remote App of Unity connecting your smartphone with USB to the PC.
+If there are some difficulties to test it please contact me.
