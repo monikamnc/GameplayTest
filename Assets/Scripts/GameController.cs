@@ -64,14 +64,20 @@ public class GameController : MonoBehaviour
                 canvas.enabled = true;
                 text.text = "You Lose!!";
                 Debug.Log("Fail");
-                player.Respawn();
-                s = State.Play;
+                //Stop the game for 1.5sec
+                StartCoroutine(WaitaBit());
                 break;
             //Error State
             default:
                 Debug.Log("Error");
                 break;
         }
+    }
+
+    IEnumerator WaitaBit(){
+        yield return new WaitForSeconds(1.5f);
+        player.Respawn();
+        s = State.Play;
     }
 
     //Button Restart Game function 
